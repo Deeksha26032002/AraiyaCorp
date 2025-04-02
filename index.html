@@ -313,182 +313,6 @@
             }
         }
     </style>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .navbar-upgraded {
-            background-color: #5B4B5A;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-        }
-
-        .logo-upgraded img {
-            max-width: 180px;
-            height: auto;
-        }
-
-        .nav-links-upgraded {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links-upgraded a {
-            color: white;
-            text-decoration: none;
-            padding: 15px 30px;
-            font-size: 18px;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links-upgraded a:hover {
-            color: #D3D3D3;
-        }
-
-        .nav-links-upgraded li {
-            position: relative;
-        }
-
-        /* Dropdown */
-        .dropdown-menu-upgraded,
-        .submenu-upgraded {
-            display: none;
-            position: absolute;
-            background-color: white;
-            list-style: none;
-            padding: 12px;
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .dropdown-menu-upgraded {
-            top: 100%;
-            left: 0;
-            min-width: 180px;
-        }
-
-        .submenu-upgraded {
-            top: 0;
-            left: 100%;
-            min-width: 180px;
-        }
-
-        .dropdown-menu-upgraded a,
-        .submenu-upgraded a {
-            color: black;
-            padding: 10px 15px;
-            font-size: 16px;
-            font-weight: 400;
-            display: block;
-        }
-
-        .dropdown-upgraded:hover>.dropdown-menu-upgraded,
-        .dropdown-submenu-upgraded:hover>.submenu-upgraded {
-            display: block;
-        }
-
-        /* Button */
-        .book-btn-upgraded {
-            background-color: white;
-            color: #5B4B5A;
-            padding: 5px 10px;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 16px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .book-btn-upgraded:hover {
-            background-color: #D3D3D3;
-        }
-
-        /* Hamburger Menu for Mobile */
-        .hamburger-upgraded {
-            display: none;
-            font-size: 24px;
-            background: none;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        @media screen and (max-width: 768px) {
-            .navbar-upgraded {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px 15px;
-                position: relative;
-                width: 100%;
-            }
-
-            .logo-upgraded {
-                display: none;
-                /* Hide logo in mobile view */
-            }
-
-            .nav-right-group {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                margin-left: auto;
-            }
-
-            .book-btn-upgraded {
-                background-color: white;
-                color: #5B4B5A;
-                padding: 5px 10px;
-                border: none;
-                cursor: pointer;
-                font-weight: bold;
-                font-size: 16px;
-                border-radius: 5px;
-                transition: all 0.3s ease;
-            }
-
-            .hamburger-upgraded {
-                display: block;
-                font-size: 24px;
-                background: none;
-                border: none;
-                color: white;
-                cursor: pointer;
-                margin-left: auto;
-                /* Pushes it to the extreme right */
-            }
-
-            .nav-links-upgraded {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                width: 100%;
-                background: #5B4B5A;
-                padding: 15px;
-                z-index: 1000;
-            }
-
-            .nav-links-upgraded.show {
-                display: flex;
-            }
-        }
-    </style>
-
-    <script>
-        function toggleMenuUpgraded() {
-            var nav = document.querySelector(".nav-links-upgraded");
-            nav.classList.toggle("show");
-        }
-    </script>
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
@@ -616,6 +440,205 @@
         </ul>
     </nav>
 
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar-upgraded {
+            background-color: #5B4B5A;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .logo-upgraded img {
+            max-width: 180px;
+            height: auto;
+        }
+
+        .nav-links-upgraded {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links-upgraded a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links-upgraded a:hover {
+            color: #D3D3D3;
+        }
+
+        .nav-links-upgraded li {
+            position: relative;
+        }
+
+        /* Dropdown */
+        .dropdown-menu-upgraded,
+        .submenu-upgraded {
+            display: none;
+            position: absolute;
+            background-color: white;
+            list-style: none;
+            padding: 12px;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .dropdown-menu-upgraded {
+            top: 100%;
+            left: 0;
+            min-width: 180px;
+        }
+
+        .submenu-upgraded {
+            top: 0;
+            left: 100%;
+            min-width: 180px;
+        }
+
+        .dropdown-menu-upgraded a,
+        .submenu-upgraded a {
+            color: black;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: 400;
+            display: block;
+        }
+
+        .dropdown-upgraded:hover>.dropdown-menu-upgraded,
+        .dropdown-submenu-upgraded:hover>.submenu-upgraded {
+            display: block;
+        }
+
+        /* Button */
+        .book-btn-upgraded {
+            background-color: white;
+            color: #5B4B5A;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        @media screen and (min-width: 769px) {
+            .nav-container-upgraded {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+
+            .nav-links-upgraded {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                flex-grow: 1;
+                /* Pushes everything except the button to the left */
+            }
+
+            .book-btn-upgraded {
+                margin-left: auto;
+                /* Forces the button to the extreme right */
+            }
+        }
+
+
+        .book-btn-upgraded:hover {
+            background-color: #D3D3D3;
+        }
+
+        /* Hamburger Menu for Mobile */
+        .hamburger-upgraded {
+            display: none;
+            font-size: 24px;
+            background: none;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar-upgraded {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 15px;
+                position: relative;
+                width: 100%;
+            }
+
+            .logo-upgraded {
+                display: none;
+                /* Hide logo in mobile view */
+            }
+
+            .nav-right-group {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-left: auto;
+            }
+
+            .book-btn-upgraded {
+                background-color: white;
+                color: #5B4B5A;
+                padding: 5px 10px;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 16px;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+            .hamburger-upgraded {
+                display: block;
+                font-size: 24px;
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+                margin-left: auto;
+                /* Pushes it to the extreme right */
+            }
+
+            .nav-links-upgraded {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                background: #5B4B5A;
+                padding: 15px;
+                z-index: 1000;
+            }
+
+            .nav-links-upgraded.show {
+                display: flex;
+            }
+        }
+    </style>
+
+    <script>
+        function toggleMenuUpgraded() {
+            var nav = document.querySelector(".nav-links-upgraded");
+            nav.classList.toggle("show");
+        }
+    </script>
+
 
     <header>
         <div id="Homecarousel" class="fullscreen-carousel carousel index-slider slide" data-ride="carousel">
@@ -674,7 +697,7 @@
         }
 
         .section-title {
-            font-size: 28px;
+            font-size: 30px;
             font-weight: bold;
             position: relative;
             display: inline-block;
@@ -693,7 +716,7 @@
         }
 
         .section-text {
-            font-size: 17px;
+            font-size: 19px;
             /* Slightly increased */
             font-weight: 500;
             /* Increased font weight */
@@ -748,6 +771,19 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="text-content">
+                        <h2>Araiya Gir</h2>
+                        <p>Experience the wild in unmatched luxury
+                            ARAIYA GIR: Your escape to the extraordinary</p>
+                        <a href="https://www.araiyahotels.com/araiya-gir">
+                            <button>Know More</button>
+                        </a>
+                    </div>
+                    <div class="image-content">
+                        <img src="images/Gir1.webp" alt="Gir Restaurant">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="text-content">
                         <h2>Mez Restaurant</h2>
                         <p>In the heart of St Julians, Malta, MÉZ stands as an epitome of culinary excellence and is
                             celebrated as the best seafood restaurant in the region. Mez is more than just a restaurant;
@@ -794,16 +830,16 @@
                 <div class="swiper-slide">
                     <div class="text-content">
                         <h2>Calico Restaurant</h2>
-                        <p>Nestled on the vibrant Islets Promenade in Buggiba, Malta, Chatterbox is renowned for its
-                            inviting ambiance, top-notch quality, and unbeatable value. This beloved Indian restaurant
-                            has consistently garnered rave reviews and a perfect five-star rating, making it the go-to
-                            dining spot in the area.</p>
+                        <p>Calico is designed for food enthusiasts, locals, and travelers who seek more than just a meal
+                            but a memorable culinary adventure. Whether you're celebrating a special occasion, meeting
+                            for business, or simply enjoying a night out, Calico caters to those with a passion for
+                            global flavors, vibrant atmospheres, and elevated dining experiences.</p>
                         <a href="https://www.calicoporto.com/">
                             <button>Know More</button>
                         </a>
                     </div>
                     <div class="image-content">
-                        <img src="images/Chatterbox-01.webp" alt="Chatterbox">
+                        <img src="images/calico.webp" alt="Calico Restaurant">
                     </div>
                 </div>
             </div>
@@ -906,12 +942,12 @@
         }
 
         .text-content h2 {
-            font-size: 28px;
+            font-size: 22px;
             margin-bottom: 15px;
         }
 
         .text-content p {
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 20px;
             line-height: 1.5;
         }
@@ -1578,28 +1614,28 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/MEZdining.webp" alt="Exclusive Cuisine">
+                    <img src="images/MEZdining.webp" alt="Mez Restaurant">
                     <div class="dining-text">
                         <h3>Mez Restaurant - Dining</h3>
                         <a href="https://www.mezrestaurants.com"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/NAANBARdining.webp" alt="Luxury Bar">
+                    <img src="images/NAANBARdining.webp" alt="Naan Bar">
                     <div class="dining-text">
                         <h3>Naanbar Restaurant - Dining</h3>
                         <a href="https://www.naanbar.com"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/CHATTERBOXdining.webp" alt="Gastronomic Adventures">
+                    <img src="images/CHATTERBOXdining.webp" alt="Chatterbox Dining">
                     <div class="dining-text">
                         <h3>Chatterbox Restaurant - Dining</h3>
                         <a href="https://www.chatterboxrestaurants.com"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/CHATTERBOXdining.webp" alt="Gastronomic Adventures">
+                    <img src="images/calicodining.webp" alt="calicodining">
                     <div class="dining-text">
                         <h3>Calico Restaurant - Dining</h3>
                         <a href="https://www.calicoporto.com/"><button>Know More</button></a>
@@ -2051,59 +2087,86 @@
     </footer>
 
     <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .navbar-upgraded {
-            background-color: #5B4B5A;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0px 60px;
-        }
-
         .footer-upgraded {
             background-color: #5B4B5A;
             color: white;
-            padding: 40px 60px;
+            padding: 50px 80px;
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
             flex-wrap: wrap;
+            font-size: 14px;
         }
 
         .footer-content-upgraded {
             display: flex;
             justify-content: space-between;
             width: 100%;
+            max-width: 1200px;
+            margin: auto;
         }
 
-        .footer-content-upgraded div {
-            max-width: 250px;
-            flex: 1;
+        .footer-logo-upgraded {
+            max-width: 300px;
         }
 
+        .footer-logo-upgraded img {
+            width: 160px;
+            margin-bottom: 20px;
+        }
+
+        /* Subscribe box with proper spacing */
         .subscribe-container-upgraded {
             display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 300px;
             gap: 10px;
-            margin-top: 10px;
+            /* Adds spacing between input & button */
         }
 
         .subscribe-container-upgraded input {
             flex: 1;
-            padding: 8px;
-            border: none;
+            padding: 12px 14px;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            font-size: 14px;
+            outline: none;
             border-radius: 5px;
         }
 
+        .subscribe-container-upgraded input::placeholder {
+            color: white;
+            opacity: 0.8;
+        }
+
         .subscribe-container-upgraded button {
-            background-color: #fff;
+            background-color: white;
             color: #5B4B5A;
             border: none;
-            padding: 8px 12px;
+            padding: 12px 18px;
+            font-size: 14px;
+            font-weight: bold;
             cursor: pointer;
             border-radius: 5px;
+        }
+
+        /* Ensure email link is white */
+        .footer-contact-upgraded a {
+            color: white !important;
+            text-decoration: none;
+        }
+
+        /* Quick Links */
+        .footer-links-upgraded {
+            max-width: 200px;
+        }
+
+        .footer-links-upgraded h4 {
+            font-size: 15px;
+            margin-bottom: 15px;
+            font-weight: bold;
         }
 
         .footer-links-upgraded ul {
@@ -2112,27 +2175,48 @@
         }
 
         .footer-links-upgraded ul li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .footer-links-upgraded ul li a {
             color: white;
             text-decoration: none;
+            font-size: 14px;
         }
 
-        .footer-social-upgraded .social-icons-upgraded a {
-            margin-right: 10px;
+        /* Social Icons - No Background */
+        .footer-social-upgraded {
+            max-width: 200px;
         }
 
-        .footer-contact-upgraded a {
+        .footer-social-upgraded h4 {
+            font-size: 15px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .footer-social-upgraded .social-icon {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer-social-upgraded .social-icon a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+        }
+
+        .footer-social-upgraded .social-icon a i {
             color: white;
-            text-decoration: none;
+            font-size: 20px;
         }
 
+        /* Mobile Styling */
         @media (max-width: 768px) {
             .footer-upgraded {
                 flex-direction: column;
-                /* Stack items vertically */
                 text-align: center;
                 padding: 30px 20px;
             }
@@ -2140,58 +2224,26 @@
             .footer-content-upgraded {
                 flex-direction: column;
                 align-items: center;
-                text-align: center;
             }
 
             .footer-content-upgraded div {
                 max-width: 100%;
-                /* Full width */
                 margin-bottom: 20px;
-                /* Space between sections */
             }
 
             .subscribe-container-upgraded {
-                flex-direction: column;
-                /* Stack input and button */
-                gap: 5px;
-                align-items: center;
+                flex-direction: row;
+                max-width: 90%;
             }
 
-            .subscribe-container-upgraded input {
-                width: 90%;
-                /* Adjust width for small screens */
-                padding: 10px;
-            }
-
+            .subscribe-container-upgraded input,
             .subscribe-container-upgraded button {
-                width: 95%;
-                padding: 10px;
+                width: auto;
+                padding: 12px;
             }
 
-            .footer-links-upgraded ul {
-                padding: 0;
-            }
-
-            .footer-links-upgraded ul li {
-                margin-bottom: 8px;
-            }
-
-            .footer-social-upgraded {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .footer-social-upgraded .social-icons-upgraded {
-                display: flex;
+            .footer-social-upgraded .social-icon {
                 justify-content: center;
-                gap: 10px;
-                margin-top: 10px;
-            }
-
-            .footer-social-upgraded a {
-                font-size: 18px;
-                /* Slightly larger icons for better tapping */
             }
         }
     </style>
