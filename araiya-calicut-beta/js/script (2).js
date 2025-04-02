@@ -1,0 +1,4 @@
+//$(window).on("load",function(){$("#status").fadeOut("fast"),$("#preloader").delay(0).fadeOut("fast"),$("body").delay(0).css({overflow:"visible"})}),
+
+
+$(document).ready(function(){var e=/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream;console.log(e),1==e?$("#mySidenav").css("min-height",$(window).height()+100+"px"):$("#mySidenav").css("min-height",$(window).height()+"px")});

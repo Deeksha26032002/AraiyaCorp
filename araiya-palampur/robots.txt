@@ -1,0 +1,1 @@
+User-agent: GooglebotDisallow: /nogooglebot/User-agent: *Allow: /Sitemap: https://www.araiyahotels.com/sitemap.xml

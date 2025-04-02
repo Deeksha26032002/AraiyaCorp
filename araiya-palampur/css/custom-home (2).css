@@ -1,0 +1,27 @@
+
+.close-cd{
+    background-color: #000 !important;
+    height: 30px;
+    width: 30px;
+}
+.ops_banner{
+    padding:20px;
+    background-color:#5c4e63
+}
+.disclaimer-txt{
+    padding: 0px;
+    padding-bottom: 5px;
+}
+@media screen and (max-width: 767px){
+    .close-cd{
+        right: 0px;
+    }
+    .disclaimer-txt{
+        padding: 0px;
+        padding-bottom: 5px;
+    }
+    .ops_banner{
+        padding:10px 20px 10px 10px;
+        background-color:#5c4e63
+    }
+}
