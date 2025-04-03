@@ -163,87 +163,87 @@
         });
 
     </script>
-        <style>
-            /* Ensure the navbar container is flex and everything is aligned */
-            .navbar .container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-    
-            /* Position the navbar toggler higher */
+    <style>
+        /* Ensure the navbar container is flex and everything is aligned */
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Position the navbar toggler higher */
+        .navbar-toggler {
+            position: absolute;
+            top: 10px;
+            /* Adjust this value to move the button up or down */
+
+            /* Optional: Adjust if you need to shift the button left/right */
+            z-index: 1;
+        }
+
+        /* Ensure the navbar brand is aligned to the left */
+        .navbar-brand {
+            margin-right: auto;
+            /* Push logo to the left */
+        }
+
+        /* Styling the Book Now button */
+        .btn-custom {
+            background-color: white;
+            color: #1e1a24;
+            font-family: "Pontano Sans", sans-serif;
+            border: none;
+            padding: 8px 15px;
+            font-size: 14px;
+            border-radius: 0px;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        /* Initially hide the Book Now button */
+        #scrollButton {
+            display: none;
+            /* Hidden initially */
+        }
+
+        /* Show the Book Now button when the navbar becomes sticky */
+        .sticky #scrollButton {
+            display: inline-block !important;
+            margin-right: 30px;
+            /* Adjust spacing between button & navbar toggler */
+            margin-top: 15px;
+        }
+
+        /* Adjust the navbar toggler (OpenNav button) to be in the top-right corner */
+        .navbar-toggler {
+            position: absolute;
+            top: 0px;
+            /* Adjusted to move the button higher */
+            right: 20px;
+            /* Pin to the top-right corner */
+            z-index: 1;
+            /* Ensure it's above other elements */
+            margin-right: 0;
+            /* Remove margin */
+        }
+
+        @media (max-width: 768px) {
             .navbar-toggler {
+                right: 8px;
+                /* Adjust this value to move it further right */
                 position: absolute;
-                top: 10px;
-                /* Adjust this value to move the button up or down */
-    
-                /* Optional: Adjust if you need to shift the button left/right */
-                z-index: 1;
             }
-    
-            /* Ensure the navbar brand is aligned to the left */
-            .navbar-brand {
-                margin-right: auto;
-                /* Push logo to the left */
-            }
-    
-            /* Styling the Book Now button */
-            .btn-custom {
-                background-color: white;
-                color: #1e1a24;
-                font-family: "Pontano Sans", sans-serif;
-                border: none;
-                padding: 8px 15px;
-                font-size: 14px;
-                border-radius: 0px;
-                transition: all 0.3s ease;
-                white-space: nowrap;
-            }
-    
-            /* Initially hide the Book Now button */
-            #scrollButton {
-                display: none;
-                /* Hidden initially */
-            }
-    
-            /* Show the Book Now button when the navbar becomes sticky */
-            .sticky #scrollButton {
-                display: inline-block !important;
-                margin-right: 30px;
-                /* Adjust spacing between button & navbar toggler */
-                margin-top: 15px;
-            }
-    
-            /* Adjust the navbar toggler (OpenNav button) to be in the top-right corner */
-            .navbar-toggler {
-                position: absolute;
-                top: 0px;
-                /* Adjusted to move the button higher */
-                right: 20px;
-                /* Pin to the top-right corner */
-                z-index: 1;
-                /* Ensure it's above other elements */
-                margin-right: 0;
-                /* Remove margin */
-            }
-    
-            @media (max-width: 768px) {
-                .navbar-toggler {
-                    right: 8px;
-                    /* Adjust this value to move it further right */
-                    position: absolute;
-                }
-            }
-    
-    
-    
-            /* Ensure the navbar toggler and the Book Now button are aligned */
-            .navbar-toggler,
-            #scrollButton {
-                display: inline-block;
-                align-items: center;
-            }
-        </style>
+        }
+
+
+
+        /* Ensure the navbar toggler and the Book Now button are aligned */
+        .navbar-toggler,
+        #scrollButton {
+            display: inline-block;
+            align-items: center;
+        }
+    </style>
     <header>
         <div class="fullscreen-carousel carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
@@ -264,15 +264,12 @@
                 <ul class="nav nav-tabs mrg-top-45" id="myTab" role="tablist">
                     <li><a href="#palampur" id="experince3" data-target="#experience" slide-to="2" class="jumper">Araiya
                             Palampur</a></li>
-                    <li><a href="#ahmedabad" id="experince1" data-target="#experience" slide-to="0"
-                            class="jumper">ÉSSENCE
-                            BY ARAIYA AHMEDABAD</a> <br>
+                    <li><a href="#palampur" id="experince3" data-target="#experience" slide-to="2" class="jumper">Araiya
+                            Gir</a></li>
+                    <li><a href="#ahmedabad" id="experince1" data-target="#experience" slide-to="0" class="jumper">Soul
+                            by Araiya Ambardi</a> <br>
                         <font color="#f79026" style="text-transform: uppercase;">[Opening
                             Soon]</font>
-                    </li>
-                    <li><a href="#calicut" id="experince2" data-target="#experience" slide-to="1" class="jumper">Araiya
-                            Calicut</a> <br>
-                        <font color="#f79026" style="text-transform: uppercase;">[Opening Soon]</font>
                     </li>
                     <li><a href="#paithalmala" id="experince4" data-target="#experience" slide-to="3"
                             class="jumper">Soul by
@@ -285,11 +282,33 @@
                         <font color="#f79026" style="text-transform: uppercase;">[Opening
                             Soon]</font>
                     </li>
-                    <li><a href="#alibaug" id="experince6" data-target="#experience" slide-to="5" class="jumper">ARAIYA
-                            WATERFRONT, ALIBAUG
+                    <li><a href="#alibaug" id="experince6" data-target="#experience" slide-to="5" class="jumper">Araiya
+                            Mt Abu
                         </a> <br>
                         <font color="#f79026" style="text-transform: uppercase;">[Opening
                             Soon]</font>
+                    </li>
+                    <li><a href="#alibaug" id="experince6" data-target="#experience" slide-to="5" class="jumper">Soul by
+                            Araiya Dehradhun
+                        </a> <br>
+                        <font color="#f79026" style="text-transform: uppercase;">[Opening
+                            Soon]</font>
+                    </li>
+                    <li><a href="#alibaug" id="experince6" data-target="#experience" slide-to="5" class="jumper">Soul by
+                            Araiya Dharamshala
+                        </a> <br>
+                        <font color="#f79026" style="text-transform: uppercase;">[Opening
+                            Soon]</font>
+                    </li>
+                    <li><a href="#alibaug" id="experince6" data-target="#experience" slide-to="5" class="jumper">Soul by
+                            Araiya Tapola
+                        </a> <br>
+                        <font color="#f79026" style="text-transform: uppercase;">[Opening
+                            Soon]</font>
+                    </li>
+                    <li><a href="#calicut" id="experince2" data-target="#experience" slide-to="1" class="jumper">Araiya
+                            Calicut</a> <br>
+                        <font color="#f79026" style="text-transform: uppercase;">[Opening Soon]</font>
                     </li>
                 </ul>
             </div>
@@ -327,7 +346,7 @@
                                             <br>
                                             <h4>A Norwood Heights
                                                 Resort </h4>
-                                            <p class="mrg-top-20"> Cosy, snowy, sun-kissed, old school, charming – these
+                                            <p class="mrg-top-20"> Cosy, snowy, sun-kissed, old school, charming - these
                                                 are
                                                 some of the many adjectives that come to mind when you think of the
                                                 mountains in Himachal Pradesh. Then again, these are also the ones you
@@ -362,41 +381,61 @@
                                     <div class="row">
                                         <div class="col-sm-5 wow fadeInLeft experience-thumb pr-md-0"
                                             data-wow-delay="0.5s">
-                                            <img src="images/exp-ahmedabad.webp" class="img-fluid sideimg"
+                                            <img src="araiya-gir/images/araiya-gir.jpg" class="img-fluid sideimg"
                                                 alt="Araiya Ahmedabad">
                                         </div>
                                         <div class="col-sm-7 experience-text text-left pad-50exp wow bg-alt fadeInDown"
                                             data-wow-delay="0.5s" id="ahmedabad"><!--col-sm-7-->
                                             <div class="main-brands-title text-uper" style="color: #1e1a34;">
-                                                <span>ÉSSENCE BY ARAIYA AHMEDABAD</span>
+                                                <span>Araiya Gir</span>
                                             </div>
                                             <br>
-                                            <h4>A Glade One Golf
-                                                Resort</h4>
-                                            <p class="mrg-top-20"> With a combination of 24 villas and suites spread
-                                                across
-                                                9 acres, Éssence by Araiya Ahmedabad offers the best in contemporary
-                                                living
-                                                merged with global sensibilities and the Indian charm. </p>
-                                            <p class="mrg-top-20">When you step into Ahmedabad, you know you’re in a
-                                                cosmopolitan city that celebrates its colourful traditions. Éssence by
-                                                Araiya Ahmedabad carefully blends the vibrant characteristics of the
-                                                city
-                                                and Gujarat offering you a unique and engaging experience. </p>
-                                            <p class="mrg-top-20"> Tee off at the 9-hole Gary Player-designed golf
-                                                course.
-                                                Make the most of the multipurpose courts available. Heighten every sense
-                                                at
-                                                the Araiya Spa or just enjoy a leisurely dip in the pool. Éssence by
-                                                Araiya
-                                                is designed to delight you. Business meetings or family events, the
-                                                property
-                                                seamlessly adapts to every need of yours. </p>
-                                            <p class="mrg-top-20"> This city enjoys its reputation of being vivid.
-                                                Experience comfort and luxury on a whole new level when you choose to
-                                                stay
-                                                with us. At Araiya, we celebrate you. </p><a class="theme-anchor dark"
-                                                href="essence-by-araiya-ahmedabad.html">Know
+                                            <h4>Welcome to Araiya Gir: A Mavintara Resort</h4>
+                                            <p class="mrg-top-20"> Nestled amidst the serene landscapes of Sasan Gir,
+                                                Araiya Gir is your gateway to the wild beauty of nature and luxurious
+                                                living. With a total of 46 elegant keys, including 20 lake villas and 26
+                                                forest villas, each designed to provide an immersive experience
+                                                of the surrounding environment, your stay here will be a perfect blend
+                                                of comfort and adventure. </p>
+                                            <p class="mrg-top-20">Lake Villas and Forest Villas Our lake villas,
+                                                offering 750 sqft of sophisticated space, are set to welcome guests
+                                                starting April 7, 2025. The spacious forest villas, each 1000 sqft, will
+                                                be available
+                                                from October, providing a tranquil escape in the heart of nature. </p>
+                                            <p class="mrg-top-20"> Family-Friendly Amenities Families will enjoy our
+                                                delightful kids' play area, operational from May, ensuring fun for our
+                                                youngest guests. Other outstanding amenities include a refreshing pool,
+                                                all-day
+                                                dining options with indoor and outdoor seating, and a rejuvenating spa
+                                                that will open its doors in October. Guests can also indulge in our
+                                                fully-equipped gym, game room, yoga pavilion, and explore various
+                                                entertainment corners throughout our lush estate. </p>
+                                            <p class="mrg-top-20">Luxurious Room Features Our well-appointed rooms come
+                                                with a minibar, free Wi-Fi, coffee and specially blended teas, custom
+                                                bath amenities, and modern entertainment options, including the ability
+                                                to
+                                                view guest content on your TV via screen mirroring. Experience the
+                                                unmatched comfort of our Araiya bedscape featuring pocketed spring
+                                                mattresses for ultimate relaxation. </p>
+                                            <p class="mrg-top-20">Explore the Surroundings Located near Gir National
+                                                Park, a UNESCO World Heritage Site, Araiya Gir offers easy access to key
+                                                attractions such as the Somnath Temple, Kamleshwar Dam, and Durbar Hall
+                                                Museum.
+                                                Reach us conveniently via Keshod Airport (70 km) or Rajkot Airport (160
+                                                km), and enjoy seamless transportation options to our resort.</p>
+                                            <p class="mrg-top-20">Curated Araiya Experiences Discover a variety of
+                                                unique experiences from exhilarating wildlife adventures to wellness and
+                                                nutrition getaways, sacred temple explorations, scenic rail excursions,
+                                                authentic
+                                                village experiences, and classic tea-tasting tours. In the evenings,
+                                                unwind with our starlit BBQ experience under the vast skies.</p>
+                                            <p class="mrg-top-20">Bespoke Affairs Whether you're planning a corporate
+                                                retreat, an intimate wedding, or a milestone event, Araiya Gir provides
+                                                an enchanting backdrop for all your bespoke occasions. </p>
+                                            <p class="mrg-top-20">Join us for an unforgettable journey where luxury
+                                                meets nature at Araiya Gir. We look forward to welcoming you to a
+                                                distinctive experience like no other.</p><a class="theme-anchor dark"
+                                                href="araiya-gir/index.html">Know
                                                 More </a>
                                         </div>
                                     </div>
@@ -461,7 +500,7 @@
                                                 Tucked
                                                 away in a remote corner, on the border of Karnataka and Kerala, our
                                                 Paithal
-                                                hill resort is one of South India’s best-kept travel secrets. </p>
+                                                hill resort is one of South India's best-kept travel secrets. </p>
                                             <p class="mrg-top-20">For those who have a passion for nature and wildlife,
                                                 Paithalmala is paradise. Stay with us at our resort in Paithalmala, and
                                                 enjoy gorgeous hikes with stunning views, accompanied by birdsong and
