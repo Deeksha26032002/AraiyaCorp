@@ -1070,79 +1070,10 @@
                 /* Resize buttons for mobile */
             }
         }
-
-        @media (max-width: 768px) {
-            .swiper-container {
-                width: 100%;
-                height: auto;
-                /* Adjusts height dynamically */
-            }
-
-            .swiper-slide {
-                flex-direction: column;
-                /* Stacks image & text */
-                align-items: center;
-                padding: 20px;
-                text-align: center;
-            }
-
-            .text-content {
-                max-width: 100%;
-            }
-
-            .text-content h2 {
-                font-size: 22px;
-                /* Smaller font for headings */
-                margin-bottom: 10px;
-            }
-
-            .text-content p {
-                font-size: 16px;
-                /* Easy-to-read paragraph size */
-                line-height: 1.4;
-            }
-
-            .text-content button {
-                font-size: 14px;
-                padding: 8px 16px;
-            }
-
-            .image-content {
-                max-width: 100%;
-                margin-top: 15px;
-            }
-
-            .image-content img {
-                width: 90%;
-                /* Ensures proper image sizing */
-                height: auto;
-                border-radius: 10px;
-            }
-
-            .nav-links1 {
-                flex-wrap: wrap;
-                gap: 8px;
-                text-align: center;
-                padding: 10px 0;
-            }
-
-            .nav-links1 a {
-                font-size: 16px;
-                /* Readable size */
-            }
-
-            .swiper-button-next,
-            .swiper-button-prev {
-                width: 40px;
-                height: 40px;
-                font-size: 18px;
-                background: rgba(255, 255, 255, 0.7);
-                /* Slightly more visible */
-            }
-        }
     </style>
     <br />
     <br />
+    <!-- Latest Offers Section -->
     <section class="latest-offers-slider">
         <h2>Our Latest Offers</h2>
         <br />
@@ -1151,16 +1082,14 @@
                 <div class="swiper-slide">
                     <img src="images/Earlybird-01.webp" alt="Family Getaways - Early Bird Offer">
                     <div class="offer-text">
-                        <h3>Araiya Palampur - Early bird
-                        </h3>
+                        <h3>Araiya Palampur - Early bird</h3>
                         <a href="araiya-palampur/offers.html"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="images/Suite indulgence.webp" alt="Limited Period Escapes">
                     <div class="offer-text">
-                        <h3>Araiya Palampur - Suite Indulgence
-                        </h3>
+                        <h3>Araiya Palampur - Suite Indulgence</h3>
                         <a href="araiya-palampur/offers.html"><button>Know More</button></a>
                     </div>
                 </div>
@@ -1177,7 +1106,7 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
-
+    
     <!-- SwiperJS Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -1198,106 +1127,80 @@
             }
         });
     </script>
-
+    
     <style>
         .latest-offers-slider {
             text-align: center;
             padding: 40px 0;
         }
-
+    
         .swiper-slide {
             position: relative;
             width: 100%;
         }
-
+    
         .swiper-slide img {
             width: 100%;
+            height: auto;
             border-radius: 10px;
             display: block;
         }
-
+    
         .offer-text {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px 15px;
-            border-radius: 5px;
-        }
-
-        .offer-text h3 {
-            font-size: 18px;
-            margin: 0;
-        }
-
-        .offer-text button {
+            bottom: 10px;
+            right: 10px;
             background: white;
             color: black;
-            padding: 8px 12px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: left;
+            width: auto;
+        }
+    
+        .offer-text h3 {
+            font-size: 16px;
+            margin: 0;
+        }
+    
+        .offer-text button {
+            background: black;
+            color: white;
+            padding: 6px 10px;
             border: none;
             cursor: pointer;
             font-size: 14px;
             margin-top: 5px;
             border-radius: 4px;
         }
-
+    
         .offer-text button:hover {
-            background: #ddd;
+            background: #333;
         }
-
+    
         @media (max-width: 768px) {
             .latest-offers-slider {
                 padding: 30px 0;
             }
-
+    
             .swiper-slide {
                 width: 100%;
                 text-align: center;
             }
-
-            .swiper-slide img {
-                width: 100%;
-                height: auto;
-                /* Ensures proper scaling */
-                border-radius: 8px;
-            }
-
+    
             .offer-text {
-                position: absolute;
                 bottom: 10px;
-                left: 50%;
-                transform: translateX(-50%);
-                /* Centers text */
-                width: 90%;
-                /* Ensures text stays within bounds */
-                background: rgba(0, 0, 0, 0.6);
-                padding: 8px 12px;
-                border-radius: 5px;
-                text-align: center;
-            }
-
-            .offer-text h3 {
-                font-size: 16px;
-                /* Readable size for mobile */
-                margin: 0;
-            }
-
-            .offer-text button {
-                font-size: 12px;
-                padding: 6px 10px;
-                margin-top: 5px;
-            }
-
-            .swiper-button-next,
-            .swiper-button-prev {
-                width: 35px;
-                height: 35px;
-                font-size: 16px;
-                background: rgba(255, 255, 255, 0.7);
+                right: 50%;
+                transform: translateX(50%);
+                width: auto;
             }
         }
     </style>
+
+    <!-- SwiperJS Script -->
+    
+
+
 
 
     <br />
@@ -1306,26 +1209,28 @@
         <br />
         <div class="experience-container">
             <div class="experience-card">
-                <img src="images/MountainRetreats.webp" alt="Active Lifestyle">
-                <h3>Active Lifestyle</h3>
+                <img src="images/MountainRetreats.webp" alt="Mountain Retreats">
+                <h3>Mountain Retreats</h3>
                 <p>The mountains are calling, and they can barely wait. Get ready for an exhilarating time with a
                     variety of adventurous activities you can choose from when you stay at our luxury adventure resort
                     in Palampur.</p>
             </div>
 
             <div class="experience-card">
-                <img src="images/WellnessRetreats.webp" alt="Cultural Immersions">
-                <h3>Cultural Immersions</h3>
-                <p> Delve into the vibrant culture of Palampur with our cultural immersions. Take part in
-                    traditional Tibetan pottery workshops, visit ancient temples, and hike through local villages. </p>
+                <img src="images/WildernessRetreats.webp" alt="Wellness Retreats">
+                <h3>Wellness Retreats</h3>
+                <p>Designed for holistic health enthusiasts, these retreats offer serene environments and transformative
+                    practices. Enjoy expert-led yoga, restorative therapies, and nourishing cuisine, all crafted to
+                    renew your mind, body, and spirit.
+                </p>
             </div>
 
             <div class="experience-card">
-                <img src="images/WildernessRetreats.webp" alt="Self Discovery">
-                <h3>Self Discovery</h3>
-                <p> Yoga at dawn, a serene walk in the mountains, or a quiet evening by the river, self-discovery is at
-                    the heart of every experience here at Araiya. These activities help you reconnect with your inner
-                    peace.</p>
+                <img src="images/WellnessRetreats.webp" alt="Wilderness Retreats">
+                <h3>Wilderness Retreats</h3>
+                <p> Ideal for wildlife enthusiasts, these retreats invite you to explore lush forests and majestic
+                    wildlife. Enjoy guided safaris, luxurious accommodations, and authentic cultural experiences that
+                    connect you to nature's beauty.</p>
             </div>
         </div>
     </section>
@@ -1440,332 +1345,282 @@
     </style>
 
     <br />
-    <section class="events-conferences-slider">
-        <h2>Events & Conferences</h2>
+    <section class="latest-offers-slider">
+        <h2> Events And Conferences</h2>
         <br />
-        <div class="swiper eventsConferencesSwiper">
+        <div class="swiper latestOffersSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="images/MeetingsConf.webp" alt="Corporate Gatherings">
-                    <div class="event-text">
-                        <h3> Meetings & Conferences - Araiya</h3>
-                        <a href="/araiya-palampur/meetings-and-events.html"><button>Know More</button></a>
+                    <img src="images/MeetingsConf.webp" alt="Meetings & Conferences">
+                    <div class="offer-text">
+                        <h3>Meetings & Conferences - Araiya</h3>
+                        <a href="araiya-palampur/meetings-and-events.html"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="images/Weddings.webp" alt="Weddings">
-                    <div class="event-text">
+                    <div class="offer-text">
                         <h3>Weddings & Events - Araiya</h3>
-                        <a href="/araiya-palampur/araiya-experience.html"><button>Know More</button></a>
+                        <a href="araiya-palampur/araiya-experience.html"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/WellnessRetreats.webp" alt="WellnessRetreats">
-                    <div class="event-text">
+                    <img src="images/WildernessRetreats.webp" alt="Wellness Retreats - Araiya">
+                    <div class="offer-text">
                         <h3>Wellness Retreats - Araiya</h3>
-                        <a href="/araiya-palampur/araiya-experience.html"><button>Know More</button></a>
+                        <a href="araiya-palampur/araiya-experience.html"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/WildernessRetreats.webp" alt="WildernessRetreats">
-                    <div class="event-text">
+                    <img src="images/WellnessRetreats.webp" alt="Wilderness Retreats - Araiya">
+                    <div class="offer-text">
                         <h3>Wilderness Retreats - Araiya</h3>
-                        <a href="/araiya-palampur/araiya-experience.html"><button>Know More</button></a>
+                        <a href="araiya-palampur/araiya-experience.html"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/MountainRetreats.webp" alt="MountainRetreats">
-                    <div class="event-text">
+                    <img src="images/MountainRetreats.webp" alt="Mountain Retreats - Araiya">
+                    <div class="offer-text">
                         <h3>Mountain Retreats - Araiya</h3>
-                        <a href="/araiya-palampur/araiya-experience.html"><button>Know More</button></a>
+                        <a href="araiya-palampur/araiya-experience.html"><button>Know More</button></a>
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next event-swiper-button-next"></div>
-            <div class="swiper-button-prev event-swiper-button-prev"></div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
-
+    
+    <!-- SwiperJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var eventSwiper = new Swiper(".eventsConferencesSwiper", {
-            slidesPerView: 2,
-            spaceBetween: 20,
+        var swiper = new Swiper(".latestOffersSwiper", {
+            slidesPerView: 2, // Show 2 slides at a time
+            spaceBetween: 10, // Reduced space between slides
             navigation: {
-                nextEl: ".event-swiper-button-next",
-                prevEl: ".event-swiper-button-prev",
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
             breakpoints: {
                 768: {
-                    slidesPerView: 2,
+                    slidesPerView: 2, // 2 slides on tablets and larger
                 },
                 0: {
-                    slidesPerView: 1,
+                    slidesPerView: 1, // 1 slide on mobile
                 }
             }
         });
     </script>
-
+    
     <style>
-        .events-conferences-slider {
+        .latest-offers-slider {
             text-align: center;
             padding: 40px 0;
         }
-
-        .eventsConferencesSwiper .swiper-slide {
+    
+        .swiper-slide {
             position: relative;
             width: 100%;
         }
-
-        .eventsConferencesSwiper .swiper-slide img {
+    
+        .swiper-slide img {
             width: 100%;
+            height: auto;
             border-radius: 10px;
             display: block;
         }
-
-        .event-text {
+    
+        .offer-text {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px 15px;
-            border-radius: 5px;
-        }
-
-        .event-text h3 {
-            font-size: 18px;
-            margin: 0;
-        }
-
-        .event-text button {
+            bottom: 10px;
+            right: 10px;
             background: white;
             color: black;
-            padding: 8px 12px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: left;
+            width: auto;
+        }
+    
+        .offer-text h3 {
+            font-size: 16px;
+            margin: 0;
+        }
+    
+        .offer-text button {
+            background: black;
+            color: white;
+            padding: 6px 10px;
             border: none;
             cursor: pointer;
             font-size: 14px;
             margin-top: 5px;
             border-radius: 4px;
         }
-
-        .event-text button:hover {
-            background: #ddd;
+    
+        .offer-text button:hover {
+            background: #333;
         }
-
+    
         @media (max-width: 768px) {
-            .events-conferences-slider {
+            .latest-offers-slider {
                 padding: 30px 0;
             }
-
-            .eventsConferencesSwiper .swiper-slide {
+    
+            .swiper-slide {
                 width: 100%;
                 text-align: center;
             }
-
-            .eventsConferencesSwiper .swiper-slide img {
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
-            }
-
-            .event-text {
-                position: absolute;
+    
+            .offer-text {
                 bottom: 10px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 90%;
-                background: rgba(0, 0, 0, 0.6);
-                padding: 8px 12px;
-                border-radius: 5px;
-                text-align: center;
-            }
-
-            .event-text h3 {
-                font-size: 16px;
-                margin: 0;
-            }
-
-            .event-text button {
-                font-size: 12px;
-                padding: 6px 10px;
-                margin-top: 5px;
-            }
-
-            .event-swiper-button-next,
-            .event-swiper-button-prev {
-                width: 35px;
-                height: 35px;
-                font-size: 16px;
-                background: rgba(255, 255, 255, 0.7);
+                right: 50%;
+                transform: translateX(50%);
+                width: auto;
             }
         }
     </style>
 
     <br />
-    <section class="signature-dining-slider">
-        <h2>Signature Dining: Food & Beverages</h2>
+
+    <section class="latest-offers-slider">
+        <h2> Signature Dining: Food & Beverages</h2>
         <br />
-        <div class="swiper signatureDiningSwiper">
+        <div class="swiper latestOffersSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="images/PalampurDining.webp" alt="Fine Dining Experience">
-                    <div class="dining-text">
+                    <img src="images/PalampurDining.webp" alt="Palampur">
+                    <div class="offer-text">
                         <h3> Araiya Palampur - Dining</h3>
-                        <a href="/araiya-palampur/dining.html"><button>Know More</button></a>
+                        <a href="araiya-palampur/dining.html"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/MEZdining.webp" alt="Mez Restaurant">
-                    <div class="dining-text">
+                    <img src="images/MEZdining.webp" alt="MEZdining">
+                    <div class="offer-text">
                         <h3>Mez Restaurant - Dining</h3>
                         <a href="https://www.mezrestaurants.com"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/NAANBARdining.webp" alt="Naan Bar">
-                    <div class="dining-text">
+                    <img src="images/NAANBARdining.webp" alt="NAANBARdining">
+                    <div class="offer-text">
                         <h3>Naanbar Restaurant - Dining</h3>
                         <a href="https://www.naanbar.com"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/CHATTERBOXdining.webp" alt="Chatterbox Dining">
-                    <div class="dining-text">
+                    <img src="images/CHATTERBOXdining.webp" alt="CHATTERBOXdining">
+                    <div class="offer-text">
                         <h3>Chatterbox Restaurant - Dining</h3>
                         <a href="https://www.chatterboxrestaurants.com"><button>Know More</button></a>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/calicodining.webp" alt="calicodining">
-                    <div class="dining-text">
+                    <img src="images/calicodining.webp" alt="Calico Restaurant - Dining">
+                    <div class="offer-text">
                         <h3>Calico Restaurant - Dining</h3>
                         <a href="https://www.calicoporto.com/"><button>Know More</button></a>
                     </div>
                 </div>
             </div>
             <!-- Navigation Buttons -->
-            <div class="swiper-button-next dining-swiper-button-next"></div>
-            <div class="swiper-button-prev dining-swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
+    
+    <!-- SwiperJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var diningSwiper = new Swiper(".signatureDiningSwiper", {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            loop: true,
+        var swiper = new Swiper(".latestOffersSwiper", {
+            slidesPerView: 2, // Show 2 slides at a time
+            spaceBetween: 10, // Reduced space between slides
             navigation: {
-                nextEl: ".dining-swiper-button-next",
-                prevEl: ".dining-swiper-button-prev",
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
             breakpoints: {
-                1024: { slidesPerView: 2 },
-                768: { slidesPerView: 2 },
-                480: { slidesPerView: 1 },
-                0: { slidesPerView: 1 }
+                768: {
+                    slidesPerView: 2, // 2 slides on tablets and larger
+                },
+                0: {
+                    slidesPerView: 1, // 1 slide on mobile
+                }
             }
         });
-
     </script>
-
+    
     <style>
-        .signature-dining-slider {
+        .latest-offers-slider {
             text-align: center;
             padding: 40px 0;
         }
-
-        .signatureDiningSwiper .swiper-slide {
+    
+        .swiper-slide {
             position: relative;
             width: 100%;
         }
-
-        .signatureDiningSwiper .swiper-slide img {
+    
+        .swiper-slide img {
             width: 100%;
+            height: auto;
             border-radius: 10px;
             display: block;
         }
-
-        .dining-text {
+    
+        .offer-text {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px 15px;
-            border-radius: 5px;
-        }
-
-        .dining-text h3 {
-            font-size: 18px;
-            margin: 0;
-        }
-
-        .dining-text button {
+            bottom: 10px;
+            right: 10px;
             background: white;
             color: black;
-            padding: 8px 12px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: left;
+            width: auto;
+        }
+    
+        .offer-text h3 {
+            font-size: 16px;
+            margin: 0;
+        }
+    
+        .offer-text button {
+            background: black;
+            color: white;
+            padding: 6px 10px;
             border: none;
             cursor: pointer;
             font-size: 14px;
             margin-top: 5px;
             border-radius: 4px;
         }
-
-        .dining-text button:hover {
-            background: #ddd;
+    
+        .offer-text button:hover {
+            background: #333;
         }
-
+    
         @media (max-width: 768px) {
-            .signature-dining-slider {
+            .latest-offers-slider {
                 padding: 30px 0;
             }
-
-            .signatureDiningSwiper .swiper-slide {
+    
+            .swiper-slide {
                 width: 100%;
                 text-align: center;
             }
-
-            .signatureDiningSwiper .swiper-slide img {
-                width: 100%;
-                height: auto;
-                /* Prevents distortion */
-                border-radius: 8px;
-            }
-
-            .dining-text {
-                position: absolute;
+    
+            .offer-text {
                 bottom: 10px;
-                left: 50%;
-                transform: translateX(-50%);
-                /* Centers text */
-                width: 90%;
-                /* Prevents text from going out of bounds */
-                background: rgba(0, 0, 0, 0.6);
-                padding: 8px 12px;
-                border-radius: 5px;
-                text-align: center;
-            }
-
-            .dining-text h3 {
-                font-size: 16px;
-                /* Readable size for mobile */
-                margin: 0;
-            }
-
-            .dining-text button {
-                font-size: 12px;
-                padding: 6px 10px;
-                margin-top: 5px;
-            }
-
-            .dining-swiper-button-next,
-            .dining-swiper-button-prev {
-                width: 35px;
-                height: 35px;
-                font-size: 16px;
-                background: rgba(255, 255, 255, 0.7);
+                right: 50%;
+                transform: translateX(50%);
+                width: auto;
             }
         }
     </style>
+
 
     <section class="custom-slider-section">
         <div class="custom-slider-header">

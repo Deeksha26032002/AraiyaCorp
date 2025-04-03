@@ -344,7 +344,7 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
             <!-- Logo -->
             <a class="navbar-brand mx-auto" href="https://www.araiyahotels.com/araiya-palampur/">
                 <img alt="Luxury Hotel & Resort in Palampur" class="img-responsive b-logo lazyload"
-                    src="images/logo.webp">
+                    src="images/logo.webp" style="width: 205px; height: 160px;">
             </a>
 
             <!-- Buttons container -->
@@ -427,22 +427,22 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
 
     </script>
 
+    <!-- data-ride="carousel" -->
     <header>
-        <div class="fullscreen-carousel carousel index-slider slide palampur-slider" data-ride="carousel"
-            id="Homecarousel">
+        <div class="fullscreen-carousel carousel index-slider slide palampur-slider" id="Homecarousel">
             <div class="carousel-inner" role="listbox">
                 <div alt="Suite Indulgence" class="carousel-item active" style="background-image:linear-gradient(
                     rgba(0,0,0,0.2),
                     rgba(0,0,0,0.2)
                     ), url('images/Bannersuite.png');background-size:cover; ">
-                        <div class="carousel-caption wow fadeInDown" style="position: absolute; top: 300px; left: 120px; text-align: left;">
+                    <!-- <div class="carousel-caption wow fadeInDown" style="position: absolute; top: 300px; left: 120px; text-align: left;">
                             <a href="https://bookings.araiyahotels.com/?propertyId=8745&checkIn=&checkOut=&adults=1&children=0&packageId=457724"
                                 onclick="goto('')"
                                 style="background-color: #1e1a24; color: white; padding: 7px 15px; text-decoration: none; font-size: 18px; font-weight: bold; display: inline-block; position: relative; z-index: 10;">
                                 Book Now
                             </a>
-                        </div>
-                    </div>
+                        </div> -->
+                </div>
                 <div alt="In the lap of nature" class="carousel-item" style="background-image:linear-gradient(
                         rgba(0,0,0,0.2),
                         rgba(0,0,0,0.2)
@@ -465,11 +465,6 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
                         <h4 class="no-mrg-top" style="font-size: 0.7rem;">ESCAPE TO ARAIYA PALAMPUR : YOUR DREAM
                             DESTINATION</h4>
                     </div>
-                    <!-- <div class="carousel-caption">
-                        <h5>Rejoice in an abode</h5>
-                        <h3>heaven would envy</h3>
-                        <p class="no-mrg-top">At our resort</p>
-                    </div> -->
                 </div>
                 <div class="carousel-item" style="background-image:linear-gradient(
                     rgba(0,0,0,0.2),
@@ -480,25 +475,9 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
                         <h2 style="font-size: 1.25rem;">YOUR UNINTERRUPTED LUXURY STAY IN PALAMPUR</h2>
                         <h3>EXPERIENCE PEACE AND COMFORT AT ARAIYA PALAMPUR</h3>
                         <h4 class="no-mrg-top" style="font-size: 0.7rem;"> AT OUR 5-STAR LUXURY HOTEL IN PALAMPUR</h4>
-                        <!-- </div> -->
-                        <!-- <h5>Your space of uninterrupted</h5>
-                        <h3> peace and comfort</h3>
-                        <p class="no-mrg-top">At our luxury hotel</p> -->
                     </div>
                 </div>
             </div>
-            <!-- <div alt="Suite Indulgence" class="carousel-item" style="background-image:linear-gradient(
-                rgba(0,0,0,0.2),
-                rgba(0,0,0,0.2)
-                ), url('images/Bannersuite.png')">
-            <div class="carousel-caption ">
-                <a href="https://bookings.araiyahotels.com/?propertyId=8745&checkIn=&checkOut=&adults=1&children=0&packageId=457724"
-                onclick="goto('')" 
-                style="background-color: #1e1a24; color: white; padding: 10px 22px; text-decoration: none; font-size: 18px; font-weight: bold; border-radius: 5px; display: inline-block; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); position: relative; z-index: 10;">
-                Book Now
-             </a>
-            </div>
-        </div> -->
             <div class="fadeInUp wow" data-wow-delay="1s" id="forcast-widget">
                 <ul>
                     <!-- <li><img alt="Araiya Exclusives" class="lazyload" src="images/small_icons/offers.webp">
@@ -841,24 +820,6 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
                 </div>
                 <div class="col-md-12">
                     <div class="featured-carousel owl-carousel">
-                        <!-- <div class="item">
-                            <div class="service-item"><a class="ser" href="offers.html"> <img
-                                        alt="Araiya Palampur rest assured" class="lazyload img-responsive"
-                                        src="images/Holi.webp">
-                                    <div class="hover-content hvr-shutter-in-horizontal">
-                                        <div> Dive into the Festival of Colours! Step into the vibrant heart of Palampur
-                                            with Araiya Palampur's Holi Package, where tradition meets luxury.
-                                            Experience the festival of colours like never before, surrounded by the
-                                            serene beauty of the Dhauladhar range.Let the spirit of Holi wash over you
-                                            as you connect with fellow travellers and locals alike.
-                                        </div>
-                                    </div>
-                                    <div class="service-item-content hvr-underline-from-center bold min-height-title">
-                                        Holi at Araiya
-                                    </div>
-                                </a>
-                            </div>
-                        </div> -->
                         <div class="item">
                             <div class="service-item"><a class="ser" href="offers.html"> <img
                                         alt="Araiya Palampur rest assured" class="lazyload img-responsive"
@@ -936,6 +897,26 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
             </div>
         </div>
     </section>
+    <script>
+        $(document).ready(function () {
+            var owl = $(".featured-carousel");
+
+            owl.owlCarousel({
+                items: 1,
+                loop: false,   // Prevent infinite looping
+                margin: 10,
+                nav: true,
+                dots: true,
+                autoplay: false, // Ensure autoplay is disabled
+                autoplayTimeout: 0, // Set autoplay delay to 0
+                autoplayHoverPause: false, // Disable hover pause
+            });
+
+            // Manually force stop autoplay again
+            owl.trigger('stop.owl.autoplay');
+        });
+
+    </script>
 
 
 
