@@ -94,7 +94,7 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
     <meta
         content=" luxury hotel in Gir, Gir luxury resorts, Best hotels in Gir, Best resort in Gir, Palampur hotel deals"
         name="keywords">
-    <link href="https://www.araiyahotels.com/araiya-Gir/" rel="canonical" />
+    <link href="https://www.araiyahotels.com/araiya-gir/" rel="canonical" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link defer href="css/font-awesome.min.css" rel="stylesheet">
     <link defer href="css/animate.css" rel="stylesheet">
@@ -121,12 +121,12 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
     <meta content="sCyYToqGQZHVBGbthiH9uDYjjFDxzqdKWbzgFZ45EXw" name="google-site-verification" />
     <meta content="Best Luxury Hotel in Palampur | Best Resort in Palampur" property="og:title" />
     <meta content="Araiya Palampur-A Norwood Heights Resort " property="og:site_name" />
-    <meta content="https://www.araiyahotels.com/araiya-Gir/" property="og:url" />
+    <meta content="https://www.araiyahotels.com/araiya-gir/" property="og:url" />
     <meta
         content="Discover the ultimate retreat at Araiya Palampur, the best hotel and resort in Palampur. Immerse in luxury, tranquility, and breathtaking views. Book now!"
         property="og:description" />
     <meta content="website" property="og:type" />
-    <meta content="https://www.araiyahotels.com/araiya-Gir/images/home-slider-3.webp" property="og:image" />
+    <meta content="https://www.araiyahotels.com/araiya-gir/images/home-slider-3.webp" property="og:image" />
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -142,8 +142,8 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
                 "streetAddress": "Morepaani Kandi village"
             },
             "telephone": "082689 08888",
-            "photo": "https://www.araiyahotels.com/araiya-Gir/images/araiya-palampur-image.jpg",
-            "image": "https://www.araiyahotels.com/araiya-Gir/images/araiya-palampur-image.jpg",
+            "photo": "https://www.araiyahotels.com/araiya-gir/images/araiya-palampur-image.jpg",
+            "image": "https://www.araiyahotels.com/araiya-gir/images/araiya-palampur-image.jpg",
             "starRating": {
                 "@type": "Rating",
                 "ratingValue": "4.5"
@@ -239,7 +239,7 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
     "@context": "https://schema.org",
     "@type": "Corporation",
     "name": "Araiya Palampur",
-    "url": "https://www.araiyahotels.com/araiya-Gir/",
+    "url": "https://www.araiyahotels.com/araiya-gir/",
     "logo": "images/logo.webp",
     "sameAs": [
         "https://www.facebook.com/Araiya-Palampur-673387259786279/",
@@ -257,7 +257,7 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
     "description": "Araiya Hotels & Resorts was born encompassing a wide spectrum of guest experience and goal was to create a globally recognized hospitality brand.",
     "name": "Araiya Palampur",
     "potentialAction": "Book Your Stay Today at Araiya, Palampur.",
-    "url": "https://www.araiyahotels.com/araiya-Gir/"
+    "url": "https://www.araiyahotels.com/araiya-gir/"
 }
 
 </script>

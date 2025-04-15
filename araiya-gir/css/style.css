@@ -4,6 +4,18 @@ html {
   font-family: "Pontano Sans", sans-serif;
 }
 
+/* Prevent horizontal scrolling on mobile */
+html,
+body {
+  overflow-x: hidden;
+} 
+
+/* Ensure no rogue padding/margin breaks layout */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .close-cd {
   position: absolute;
   right: 32px;
@@ -55,7 +67,8 @@ html {
 
 /* Ensure the navbar brand is aligned to the left */
 .navbar-brand {
-  margin-right: auto; /* Push logo to the left */
+  margin-right: auto;
+  /* Push logo to the left */
 }
 
 /* Styling the Book Now button */
@@ -73,37 +86,45 @@ html {
 
 /* Initially hide the Book Now button */
 #scrollButton {
-  display: none; /* Hidden initially */
+  display: none;
+  /* Hidden initially */
 }
 
 /* Show the Book Now button when the navbar becomes sticky */
 .sticky #scrollButton {
   display: inline-block !important;
-  margin-right: 45px; /* Adjust spacing between button & navbar toggler */
+  margin-right: 45px;
+  /* Adjust spacing between button & navbar toggler */
   margin-top: 20px;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
+
   /* Show the Book Now button when the navbar becomes sticky (Only for mobile) */
   .sticky #scrollButton {
     display: inline-block !important;
     position: absolute;
-    right: 30px; /* Adjust this value to place it next to the navbar toggler */
+    right: 30px;
+    /* Adjust this value to place it next to the navbar toggler */
     margin-bottom: 70px;
   }
 }
 
 .sticky #scrollButton1 {
   display: inline-block !important;
-  margin-right: 45px; /* Adjust spacing between button & navbar toggler */
+  margin-right: 45px;
+  /* Adjust spacing between button & navbar toggler */
   margin-top: 20px;
 }
-@media (max-width: 768px) { 
+
+@media (max-width: 768px) {
+
   /* Show the Book Now button when the navbar becomes sticky (Only for mobile) */
   .sticky #scrollButton1 {
     display: inline-block !important;
     position: absolute;
-    right: 30px; /* Adjust this value to place it next to the navbar toggler */
+    right: 22px;
+    /* Adjust this value to place it next to the navbar toggler */
     margin-bottom: 0px;
   }
 }
@@ -112,10 +133,14 @@ html {
 /* Adjust the navbar toggler (OpenNav button) to be in the top-right corner */
 .navbar-toggler {
   position: absolute;
-  top: 0px; /* Adjusted to move the button higher */
-  right: 30px; /* Pin to the top-right corner */
-  z-index: 1;  /* Ensure it's above other elements */
-  margin-right: 0; /* Remove margin */
+  top: 0px;
+  /* Adjusted to move the button higher */
+  right: 30px;
+  /* Pin to the top-right corner */
+  z-index: 1;
+  /* Ensure it's above other elements */
+  margin-right: 0;
+  /* Remove margin */
 }
 
 /* Flexbox layout for aligning buttons correctly */
@@ -3929,29 +3954,36 @@ a.dark {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Adjust height as needed */
+  height: 100%;
+  /* Adjust height as needed */
   text-align: center;
 }
 
 .btn-primary1 {
-  display: inline-block; /* Ensure button behaves properly */
+  display: inline-block;
+  /* Ensure button behaves properly */
 }
 
 .moda {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  height: 100%; /* Ensure enough height for vertical centering */
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */
+  height: 100%;
+  /* Ensure enough height for vertical centering */
   text-align: center;
 }
 
 .btn-primary1 {
   background-color: #1e1a34;
   color: white;
-  padding: 10px 20px; /* Adjust padding for better size */
+  padding: 10px 20px;
+  /* Adjust padding for better size */
   border: none;
   cursor: pointer;
-  border-radius: 5px; /* Optional: Rounded corners */
+  border-radius: 5px;
+  /* Optional: Rounded corners */
   text-align: center;
 }
 
@@ -3959,12 +3991,16 @@ a.dark {
   background-color: #1e1a34;
   color: white;
 }
+
 /* Center the button */
 .parent-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100%; /* Ensure there's enough height */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  height: 100%;
+  /* Ensure there's enough height */
 }
 
 /* Button styling */
@@ -3973,9 +4009,11 @@ a.dark {
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px; /* Optional: Rounded corners */
+  border-radius: 5px;
+  /* Optional: Rounded corners */
   cursor: pointer;
-  text-align: center; /* Ensures content inside the button is centered */
+  text-align: center;
+  /* Ensures content inside the button is centered */
 }
 
 .btn-primary1:hover {

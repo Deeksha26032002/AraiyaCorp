@@ -103,7 +103,7 @@ html {
   .sticky #scrollButton1 {
     display: inline-block !important;
     position: absolute;
-    right: 30px; /* Adjust this value to place it next to the navbar toggler */
+    right: 20px; /* Adjust this value to place it next to the navbar toggler */
     margin-bottom: 0px;
   }
 }

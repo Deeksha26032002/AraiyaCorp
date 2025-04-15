@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -241,6 +243,100 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
 
 
 <body style="overflow:hidden !important;">
+    <div class="promo-strip">
+        <div class="promo-text">
+            Stay for a minimum of 3 nights and get Flat 25% discount on bookings!
+        </div>
+    </div>
+    <style>
+        /* Ensure the promo strip is always on top */
+        .promo-strip {
+            background-color: #1e1a24;
+            /* Dark background color */
+            overflow: hidden;
+            width: 100%;
+            height: 60px;
+            /* Default height */
+            position: fixed;
+            /* Fixed position at the top */
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            /* Ensure it's on top */
+            display: block;
+        }
+
+        .promo-text {
+            white-space: nowrap;
+            display: inline-block;
+            position: absolute;
+            will-change: transform;
+            animation: slideText 15s linear infinite;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            /* Default font size */
+            padding-left: 100%;
+            /* Start off-screen */
+            line-height: 60px;
+            /* Vertically centered */
+        }
+
+        @keyframes slideText {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* For tablets and mobile */
+        @media (max-width: 768px) {
+            .promo-strip {
+                height: 50px;
+                /* Reduced height for smaller screens */
+            }
+
+            .promo-text {
+                font-size: 14px;
+                /* Reduced font size */
+                line-height: 50px;
+                /* Adjust line height */
+            }
+        }
+
+        /* For very small mobile screens */
+        @media (max-width: 480px) {
+            .promo-strip {
+                height: 45px;
+                /* Even smaller height */
+            }
+
+            .promo-text {
+                font-size: 12px;
+                /* Even smaller font */
+                line-height: 45px;
+                /* Adjust line height */
+            }
+        }
+
+        /* Very small mobile, like 320px */
+        @media (max-width: 320px) {
+            .promo-strip {
+                height: 40px;
+                /* Further reduced height for very small screens */
+            }
+
+            .promo-text {
+                font-size: 10px;
+                /* Even smaller font */
+                line-height: 40px;
+                /* Adjust line height */
+            }
+        }
+    </style>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BNKD7T" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -278,6 +374,7 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
             style="display:none;visibility:hidden" width="0"></iframe>
 
     </noscript>
+
 
     <div class="opening_soon wow fadeInUp" data-wow-delay="2s">
         <div class="hotel_booking_area hotel_booking_table position discovery-logo-row">
@@ -431,18 +528,14 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
     <header>
         <div class="fullscreen-carousel carousel index-slider slide palampur-slider" id="Homecarousel">
             <div class="carousel-inner" role="listbox">
-                <div alt="Suite Indulgence" class="carousel-item active" style="background-image:linear-gradient(
-                    rgba(0,0,0,0.2),
-                    rgba(0,0,0,0.2)
-                    ), url('images/Bannersuite.png');background-size:cover; ">
-                    <!-- <div class="carousel-caption wow fadeInDown" style="position: absolute; top: 300px; left: 120px; text-align: left;">
-                            <a href="https://bookings.araiyahotels.com/?propertyId=8745&checkIn=&checkOut=&adults=1&children=0&packageId=457724"
-                                onclick="goto('')"
-                                style="background-color: #1e1a24; color: white; padding: 7px 15px; text-decoration: none; font-size: 18px; font-weight: bold; display: inline-block; position: relative; z-index: 10;">
-                                Book Now
-                            </a>
-                        </div> -->
+                <div class="carousel-item active suite-indulgence-banner">
+                    <div class="carousel-caption-content">
+                        <div class="suite-text">
+
+                        </div>
+                    </div>
                 </div>
+
                 <div alt="In the lap of nature" class="carousel-item" style="background-image:linear-gradient(
                         rgba(0,0,0,0.2),
                         rgba(0,0,0,0.2)
@@ -603,99 +696,93 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
     </div>
     </div>
 
+    <style>
+        .suite-indulgence-banner {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                url('images/homepagebanner.jpg') !important;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
 
-    <!-- limited offer section starts -->
+        .carousel-caption-content {
+            width: 100%;
+            padding: 40px 20px;
+            text-align: left;
+            color: white;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    <!-- <div class="promotions-wrapper">
-            <a class="promo-btn" href="javascript:void(0);">
-                <span class="promo-text">Limited Offer</span>
-                <span class="promo-gift fa fa-gift"></span>
-                <span class="promo-close"><i class="fa fa-times"></i></span>
-            </a>
-            <div class="promo-details-wrap">
-                <div class="promo-details">
-                    <div class="cycle-slideshow" data-cycle-caption=".custom-caption" data-cycle-log="false"
-                        data-cycle-loop="0" data-cycle-slides="> div" data-cycle-timeout="4700" id="promos"
-                        style="position: relative;">
-                        <div class="promotions cycle-slide cycle-slide-active"
-                            style="position: absolute; top: 0px; left: 0px; opacity: 1; visibility: visible; display: block; z-index: 99;">
-                            <a class="promo-page-link"
-                                href="https://bookings.araiyahotels.com/?propertyId=8745&checkIn=2025-01-26&checkOut=2025-01-27&packageId=446538&promocode=Republic">
-                                <div class="promotion-content">
-                                    <p class="promotion-heading clamped-4">Republic Day Resplendence</p>
-                                    <p class="promotion-para">Celebrate Republic Day at Araiya Palampur on January 26th,
-                                        2025, with an exclusive 20% off staycation packages and spa treatments </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="promotions cycle-slide"
-                            style="position: absolute; top: 0px; left: 0px; opacity: 0; visibility: hidden; display: block; z-index: 100;">
-                            <a class="promo-page-link"
-                                href="https://bookings.araiyahotels.com/?propertyId=8745&checkIn=2025-01-26&checkOut=2025-01-27&packageId=446538&promocode=Republic">
-                                <div class="promotion-content">
-                                    <p class="promotion-heading clamped-4">Republic Day Resplendence</p>
-                                    <p class="promotion-para">Flag-hoisting
-                                        ceremony, special buffet, cultural performances.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="promo-control">
-                        <div class="play-pause">
-                            <span class="custom-caption">1 / 1</span>
-                            <span class="fa fa-angle-right controls camera_next1" data-cycle-cmd="next"></span>
-                            <span class="sr-only">previous promo</span>
-                            <span class="pause-button fa fa-pause"></span>
-                            <span class="sr-only">pause Promo</span>
-                            <span class="play-button fa fa-play"></span>
-                            <span class="sr-only">play Promo</span>
-                            <span class="fa fa-angle-left controls camera_prev1" data-cycle-cmd="prev"></span>
-                            <span class="sr-only">next Promo</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+        .suite-text ul {
+            list-style: none;
+            padding-left: 0;
+            font-size: 20px;
+            line-height: 1.8;
+        }
 
-    <!-- limited offer section ends -->
-    <!--<div class="promotions-wrapper"><a class="promo-btn" href="#"><span class="promo-text">Limited Offer</span> <span-->
-    <!--            class="promo-gift fa fa-gift"></span> <span class="promo-close"><i class="fa fa-times"></i></span></a>-->
-    <!--    <div class="promo-details-wrap">-->
-    <!--        <div class="promo-details">-->
-    <!--            <div class="cycle-slideshow" data-cycle-caption=".custom-caption" data-cycle-log="false"-->
-    <!--                data-cycle-loop="0" data-cycle-slides="> div" data-cycle-timeout="4700" id="promos"-->
-    <!--                style="position: relative;">-->
+        .suite-text {
+            position: absolute;
+            bottom: 16%;
+            right: 32%;
+            z-index: 10;
+            padding: 0;
+        }
 
-    <!--                <div class="promotions cycle-slide cycle-slide-active"-->
-    <!--                    style="position: absolute; top: 0px; left: 0px; opacity: 1; visibility: visible; display: block; z-index: 99;">-->
-    <!--                    <a class="promo-page-link" href="https://bookings.araiyahotels.com/?chainId=8749&propertyId=8745&packageId=402580">-->
-    <!--                        <div class="promotion-content">-->
-    <!--                            <p class="promotion-heading clamped-4">Indulge & Escape</p>-->
-    <!--                            <p class="promotion-para">Stay for 2 nights and get 1 free Discover the ultimate retreat with our exclusive "Escape & Indulge" package at Araiya Palampur-->
-    <!--                            </p>-->
-    <!--                        </div>-->
-    <!--                    </a></div>-->
-    <!-- <div class="promotions cycle-slide"
-                    <!--    style="position: absolute; top: 0px; left: 0px; opacity: 0; visibility: hidden; display: block; z-index: 100;">-->
-    <!--    <a class="promo-page-link" href="./limited-offer/early-bird-offer.html">-->
-    <!--        <div class="promotion-content">-->
-    <!--            <p class="promotion-heading clamped-4">Early Bird Offer</p>-->
-    <!--            <p class="promotion-para">Book a holiday in advance and enjoy a discount of up to 20% on-->
-    <!--                your booking</p>-->
-    <!--        </div>-->
-    <!--    </a></div> -->
-    <!--            </div>-->
-    <!--            <div class="promo-control">-->
-    <!--                <div class="play-pause"><span class="custom-caption">1 / 1</span> <span-->
-    <!--                        class="fa fa-angle-right controls camera_next1" data-cycle-cmd="next"></span> <span-->
-    <!--                        class="sr-only">previous promo</span> <span class="pause-button fa fa-pause"></span> <span-->
-    <!--                        class="sr-only">pause Promo</span> <span class="play-button fa fa-play"></span> <span-->
-    <!--                        class="sr-only">play Promo</span> <span class="fa fa-angle-left controls camera_prev1"-->
-    <!--                        data-cycle-cmd="prev"></span> <span class="sr-only">next Promo</span></div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
+        a:hover {
+            color: white;
+        }
+
+        .book-now-btn {
+            padding: 14px 28px;
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+
+        .book-now-btn:hover {
+            background-color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .book-now-btn {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .carousel-caption h3,
+            .carousel-caption h4 {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .suite-indulgence-banner {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                    url('images/homepagebanner-mobile.webp') !important;
+            }
+
+            .carousel-caption-content {
+                padding: 20px 15px;
+            }
+
+            .suite-text ul {
+                font-size: 16px;
+            }
+        }
+    </style>
+
     <section class="full-section avaibiblity-box">
         <div class="row no-mrg full-section">
             <div class="col-sm-3 about-us-wrapper no-pad">
@@ -1461,10 +1548,14 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
         <div class="faq-container">
             <h1 class="faq-header">Frequently Asked Questions</h1>
             <div class="accordion">
-                <!-- Visible FAQs initially -->
+
+                <!-- FAQ -->
                 <div class="faq-item">
-                    <p class="faq-question">What makes Araiya Palampur the best luxury hotel in Palampur?</p>
-                    <div class="faq-answer" style="display: block;">
+                    <div class="faq-question">
+                        What makes Araiya Palampur the best luxury hotel in Palampur?
+                        <span class="arrow">&#9662;</span> <!-- Down arrow -->
+                    </div>
+                    <div class="faq-answer" style="display: none;">
                         Araiya Palampur stands out with its combination of modern amenities, scenic views, and top-tier
                         services, making it the ideal choice for both relaxation and adventure. With luxury rooms,
                         5-star dining, and exceptional facilities like the Araiya Spa, we offer a truly unforgettable
@@ -1472,8 +1563,11 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
                     </div>
                 </div>
                 <div class="faq-item">
-                    <p class="faq-question">Does Araiya Palampur offer luxury dining options?</p>
-                    <div class="faq-answer" style="display: block;">
+                    <div class="faq-question">
+                        Does Araiya Palampur offer luxury dining options?
+                        <span class="arrow">&#9662;</span> <!-- Down arrow -->
+                    </div>
+                    <div class="faq-answer" style="display: none;">
                         Yes, Araiya Palampur offers a range of luxury dining experiences. From authentic Kangri cuisine
                         to global culinary delights, enjoy terrace dining with panoramic views of the valley or relax in
                         our Old Fox Bar. Whether you prefer a casual meal or fine dining, every meal promises to be a
@@ -1481,19 +1575,24 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
                     </div>
                 </div>
                 <div class="faq-item">
-                    <p class="faq-question">What types of rooms and suites are available at Araiya Palampur?</p>
-                    <div class="faq-answer" style="display: block;">
+                    <div class="faq-question">
+                        What types of rooms and suites are available at Araiya Palampur?
+                        <span class="arrow">&#9662;</span> <!-- Down arrow -->
+                    </div>
+                    <div class="faq-answer" style="display: none;">
                         Araiya Palampur offers a variety of luxury rooms and suites, including Deluxe Rooms, Executive
                         Suites, and our luxury Duplex Suite. Each room is designed for comfort, offering Himalayan
                         views, spacious interiors, and world-class amenities, ensuring a relaxing and luxurious stay.
                     </div>
                 </div>
-
-                <!-- Hidden FAQs initially -->
+                <!-- HIDDEN FAQS -->
                 <div id="hidden-faqs" style="display: none;">
                     <div class="faq-item">
-                        <p class="faq-question">Is Araiya Palampur suitable for business events and meetings?</p>
-                        <div class="faq-answer">
+                        <div class="faq-question">
+                            Is Araiya Palampur suitable for business events and meetings?
+                            <span class="arrow">&#9662;</span> <!-- Down arrow -->
+                        </div>
+                        <div class="faq-answer" style="display: none;">
                             Yes, Araiya Palampur is a perfect venue for business meetings and social gatherings. We
                             offer a state-of-the-art meeting room with customizable seating arrangements, audio-visual
                             equipment, and stunning natural surroundings. Whether for corporate retreats or private
@@ -1501,8 +1600,11 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
                         </div>
                     </div>
                     <div class="faq-item">
-                        <p class="faq-question">Are there any spa services available at Araiya Palampur?</p>
-                        <div class="faq-answer">
+                        <div class="faq-question">
+                            Are there any spa services available at Araiya Palampur?
+                            <span class="arrow">&#9662;</span> <!-- Down arrow -->
+                        </div>
+                        <div class="faq-answer" style="display: none;">
                             Yes, our luxury wellness spa offers a range of treatments, including Western, Oriental, and
                             Ayurvedic therapies. The Araiya Spa is designed to rejuvenate both the body and mind,
                             ensuring you feel completely relaxed and refreshed during your stay. Experience world-class
@@ -1510,9 +1612,12 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
                         </div>
                     </div>
                     <div class="faq-item">
-                        <p class="faq-question">What makes Araiya Palampur an ideal venue for a destination wedding in
-                            Himachal Pradesh?</p>
-                        <div class="faq-answer">
+                        <div class="faq-question">
+                            What makes Araiya Palampur an ideal venue for a destination wedding in
+                            Himachal Pradesh?
+                            <span class="arrow">&#9662;</span> <!-- Down arrow -->
+                        </div>
+                        <div class="faq-answer" style="display: none;">
                             Araiya Palampur is one of the best luxury wedding venues in Himachal Pradesh, offering
                             stunning mountain views, luxury wedding halls, and elegant banquet facilities. Our expert
                             team is dedicated to creating a dream destination wedding, whether you are looking for an
@@ -1520,8 +1625,11 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
                         </div>
                     </div>
                     <div class="faq-item">
-                        <p class="faq-question">What activities are available at Araiya Palampur for guests?</p>
-                        <div class="faq-answer">
+                        <div class="faq-question">
+                            What activities are available at Araiya Palampur for guests?
+                            <span class="arrow">&#9662;</span> <!-- Down arrow -->
+                        </div>
+                        <div class="faq-answer" style="display: none;">
                             Guests at Araiya Palampur can enjoy a wide range of activities, including guided treks, tea
                             garden tours, and outdoor adventures in the surrounding Himalayas. For those seeking a more
                             relaxing experience, we offer yoga classes, spa treatments, and the opportunity to simply
@@ -1529,16 +1637,22 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
                         </div>
                     </div>
                     <div class="faq-item">
-                        <p class="faq-question">Is Araiya Palampur a family-friendly hotel?</p>
-                        <div class="faq-answer">
+                        <div class="faq-question">
+                            Is Araiya Palampur a family-friendly hotel?
+                            <span class="arrow">&#9662;</span> <!-- Down arrow -->
+                        </div>
+                        <div class="faq-answer" style="display: none;">
                             Yes, Araiya Palampur is a family-friendly hotel. Our family suites offer ample space, while
                             the serene surroundings and a variety of activities like nature walks and outdoor sports
                             ensure an unforgettable experience for guests of all ages.
                         </div>
                     </div>
                     <div class="faq-item">
-                        <p class="faq-question">How can I book a stay at Araiya Palampur?</p>
-                        <div class="faq-answer">
+                        <div class="faq-question">
+                            How can I book a stay at Araiya Palampur?
+                            <span class="arrow">&#9662;</span> <!-- Down arrow -->
+                        </div>
+                        <div class="faq-answer" style="display: none;">
                             Booking a stay at Araiya Palampur is simple! You can either book directly through our
                             website for exclusive offers or contact our reservations team at
                             reservations.palampur@araiyahotels.com. We offer personalized booking services to help you
@@ -1546,8 +1660,10 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
                         </div>
                     </div>
                 </div>
+                <!-- FAQend -->
 
                 <!-- Read More and See Less buttons -->
+
                 <div style="text-align: center; margin-top: 15px;">
                     <span id="read-more-btn"
                         style="color: black; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; font-family:Pontano Sans, sans-serif;">
@@ -1561,48 +1677,101 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
             </div>
         </div>
 
-        <script>
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            const hiddenFaqs = document.getElementById('hidden-faqs');
-            const readMoreBtn = document.getElementById('read-more-btn');
-            const closeBtn = document.getElementById('close-btn');
-            const faqAnswers = document.querySelectorAll('.faq-answer');
+        <!-- Your HTML above -->
+        <!-- FAQ down arrow -->
 
-            // FAQ toggle functionality (keeps first 3 answers open)
-            faqQuestions.forEach(question => {
+        <script>
+            // Toggle answer display and rotate arrow
+            document.querySelectorAll('.faq-question').forEach(question => {
                 question.addEventListener('click', () => {
+                    const item = question.parentElement;
                     const answer = question.nextElementSibling;
 
-                    // Toggle visibility of individual answers, excluding the first 3
-                    if (answer.style.display === 'block') {
-                        answer.style.display = 'none';
-                    } else {
-                        // Close all answers except for the first 3
-                        faqAnswers.forEach((a, index) => {
-                            if (index >= 3) {
-                                a.style.display = 'none';
-                            }
-                        });
-                        answer.style.display = 'block';
-                    }
+                    // Toggle active class
+                    item.classList.toggle('active');
+
+                    // Show/hide answer
+                    answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
                 });
             });
 
-            // Read More button functionality
+            // Read More / Read Less functionality
+            const hiddenFaqs = document.getElementById('hidden-faqs');
+            const readMoreBtn = document.getElementById('read-more-btn');
+            const closeBtn = document.getElementById('close-btn');
+
             readMoreBtn.addEventListener('click', () => {
                 hiddenFaqs.style.display = 'block';
                 readMoreBtn.style.display = 'none';
-                closeBtn.style.display = 'inline-block';
+                closeBtn.style.display = 'inline-flex';
             });
 
-            // Close button functionality (See Less)
             closeBtn.addEventListener('click', () => {
                 hiddenFaqs.style.display = 'none';
-                readMoreBtn.style.display = 'inline-block';
+                readMoreBtn.style.display = 'inline-flex';
                 closeBtn.style.display = 'none';
+
+                // Collapse hidden answers and remove "active"
+                hiddenFaqs.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                hiddenFaqs.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
             });
         </script>
+
+
     </section>
+    <style>
+        .arrow {
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .faq-item.active .arrow {
+            transform: rotate(180deg);
+            /* Rotate down to up */
+        }
+
+        .faq-answer {
+            display: none !important;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block !important;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px 0;
+            font-size: 15px;
+            color: #444;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-bottom: 1px solid #ddd;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #efefef;
+        }
+
+        .arrow {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .arrow {
+            transform: rotate(180deg);
+            /* Up arrow */
+        }
+    </style>
 
 
     <div id="phoneheader">
@@ -1612,7 +1781,7 @@ Immerse in luxury, tranquility, and breathtaking views. Book now!" name="descrip
     </div>
 
     <style>
-        #phoneheader {
+        #my style #mystyleend #phoneheader {
             z-index: 1000;
             position: fixed;
             bottom: 110px;
